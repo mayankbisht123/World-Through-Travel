@@ -1,0 +1,20 @@
+body{
+    animation:slideFadeIn 0.75s;
+}
+.name_bar{
+  animation:slideFadeIn 1s;
+}
+@keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

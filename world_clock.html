@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="master.css">
+    <title>World Clock</title>
+    <script>
+        function getCurrentDateTime() {
+          // Create a new Date object
+          var currentDate = new Date();
+          
+          // Set time zone
+          var india =  { timeZone: 'Asia/Kolkata' };
+          var uk    =     { timeZone: 'Europe/London' };
+          var russia = { timeZone: 'Europe/Moscow' };
+          var france = { timeZone: 'Europe/Paris' };
+          var brazil = { timeZone: 'America/Sao_Paulo' };
+          
+          // India
+          var date1 = currentDate.toLocaleDateString(undefined, india);
+          var time1 = currentDate.toLocaleTimeString(undefined, india);
+
+          //UK
+          var date2 = currentDate.toLocaleDateString(undefined, uk);
+          var time2 = currentDate.toLocaleTimeString(undefined, uk);
+          // Russia
+          var date3 = currentDate.toLocaleDateString(undefined, russia);
+          var time3 = currentDate.toLocaleTimeString(undefined, russia);
+        // France
+          var date4 = currentDate.toLocaleDateString(undefined, france);
+          var time4 = currentDate.toLocaleTimeString(undefined, france);
+        // Brazil
+          var date5 = currentDate.toLocaleDateString(undefined, brazil);
+          var time5 = currentDate.toLocaleTimeString(undefined, brazil);
+
+          // Display the current date and time in the HTML element with id "datetime"
+          document.getElementById("i").innerHTML = "Current Date: " + date1 + "<br>Current Time: " + time1;
+          document.getElementById("u").innerHTML = "Current Date: " + date2 + "<br>Current Time: " + time2;
+          document.getElementById("r").innerHTML = "Current Date: " + date3 + "<br>Current Time: " + time3;
+          document.getElementById("f").innerHTML = "Current Date: " + date4 + "<br>Current Time: " + time4;
+          document.getElementById("b").innerHTML = "Current Date: " + date5 + "<br>Current Time: " + time5;
+        }
+        
+        // Update the date and time every second
+        setInterval(getCurrentDateTime, 1000);
+      </script>
+</head>
+<style>
+    @font-face {
+  font-family: travels;
+  src: url('source_sans_pro.ttf');
+}
+
+@font-face {
+  font-family: travels_2;
+  src: url('GOTHICB.TTF');
+}
+
+    body {
+      font-family: travels,sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("clk.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: max-content;
+      z-index: 1;
+    }
+
+    .symbol{
+        margin-top: 53px;
+    width: 180px;
+    text-align: center;
+    margin-left: 276px;
+    }
+    .symbol img {
+    width: 60px;
+    height: 60px;
+
+     }
+
+     .symbol p{
+        margin-top: 0px;
+    font-size: 20px;
+    font-family: travels_2,sans-serif;
+    color: white;
+     }
+
+    header img {
+        width: 150px;
+    height: 150px;
+    margin-left: 265px;
+    margin-top: 50px;
+     }
+    .nav {
+        margin-top: -63px;
+    margin-left: 639px;
+    width: 580px;
+    font-family: travels,sans-serif;
+    font-size: 20px;
+    }
+
+    .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 10px;
+  position: relative; /* Added */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.932);
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav ul li a:hover {
+  transform: scale(1.5);
+  color: rgba(255, 255, 255, 0.514);
+  transition: all 0.5s ease;
+}
+
+.nav ul li ul.dropdown{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px 0;
+  min-width: 160px;
+  transition: all 0.5s ease;
+}
+.nav ul li:hover ul.dropdown {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+/* CSS for content */
+
+.main{
+    margin: 120px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    margin-top: 5%;
+}
+.main h1{
+    font-family:travels_2,sans-serif;
+}
+.main p{
+    font-family:travels,sans-serif;
+}
+</style>
+<body>
+  <div id="background">
+<div class="symbol">
+        <img src="icon.png" alt="">
+        <p>WORLD THROUGH <br>TRAVEL</p>
+</div>
+<header>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Destinations</a>
+                <ul class="dropdown">
+                  <li><a href="rajasthan.html">Rajasthan</a></li>
+                 <li><a href="uttarakhand.html">Uttarakhand</a></li>
+                 <li><a href="assam.html">Assam</a></li>
+                 <li><a href="tamil_nadu.html">Tamil Nadu</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="#">Maps</a>
+                <ul class="dropdown">
+                  <li><a href="maps.html">Locations</a></li>
+                  <li><a href="world_clock.html">World Clock</a></li>
+                </ul></li>
+        </ul>
+    </div>
+</header> 
+<div class="main">
+    <div class="India">
+      <h1>India</h1>
+      <p id="i"></p>
+    </div>
+    <div class="Uk">
+        <h1>UK</h1>
+        <p id="u"></p>
+      </div>
+      <div class="Russia">
+        <h1>Russia</h1>
+        <p id="r"></p>
+      </div>
+      <div class="France">
+        <h1>France</h1>
+        <p id="f"></p>
+      </div>
+      <div class="Brazil">
+        <h1>Brazil</h1>
+        <p id="b"></p>
+      </div>
+</div>
+</div>
+</body>
+</html>

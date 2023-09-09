@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="source_sans_pro.ttf">
+    <link rel="stylesheet" href="GOTHICB.TTF">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>World Through Travel</title>
+</head>
+<body>
+  <div class="top_bar">
+    <img src="Icon_bar.png" alt="World Through Travel" style="margin-left: 25px;width:40px;height:40px;">
+    <h1>WELCOME</h1>
+    <img src="facebook.png" alt="Facebook">
+    <img src="insta.png" alt="Instagram">
+    <img src="twitter.png" alt="Twitter" >
+  </div>
+  <div class="taskbar">
+    <div class="design">
+      <img src="icon.png" alt="">
+      <h1 style="margin-top:0px;font-size:20px;font-family:travels_2,sans-serif;">WORLD THROUGH<br>TRAVEL </h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Destinations</a>
+          <ul class="dropdown">
+            <li><a href="rajasthan.html">Rajasthan</a></li>
+            <li><a href="uttarakhand.html">Uttarakhand</a></li>
+            <li><a href="assam.html">Assam</a></li>
+            <li><a href="tamil_nadu.html">Tamil Nadu</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="#">Maps</a>
+          <ul class="dropdown">
+            <li><a href="maps.html">Locations</a></li>
+            <li><a href="world_clock.html">World Clock</a></li>
+          </ul></li>
+      </ul>
+    </div>
+  </div>
+  <div class="top_content">
+    <a href="#down">LET'S EXPLORE...</a>
+  </div>
+
+  <div class="lake">
+    <p>
+      Welcome to our travel paradise!</b><br>
+      Embark on an extraordinary journey
+      and explore the world like never before.<br>
+      Whether you crave captivating landscapes,
+      vibrant cultures, or thrilling adventures,<br>
+      we've got you covered.
+      Our travel website is your gateway<br>
+      to endless possibilities.
+    </p>
+    <div class="content">
+      <div class="first_div">
+        <h5>What's Famous</h5>
+        <p id="p1" class="text-animation"></p></p>
+        <a href="">Book My Trip</a>
+      </div>
+      <div class="second_div">
+        <h5>What's New?</h5>
+        <p id="p2"class="text-animation"></p>
+        <a href="">More Details</a>
+      </div>
+      <div class="third_div">
+        <h5>Recommendations</h5>
+        <p id="p3"class="text-animation"></p>
+        <a href="">Places you may like</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<a id="down"></a>
+</body>
+  <script>
+    var p1t1 = "The Taj Mahal is an iconic architectural masterpiece located in Agra, India. It was built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal.";
+    var p1t2 = "The Eiffel Tower, situated in Paris, France, is an emblem of elegance and grandeur. Standing tall at 324 meters, it offers panoramic views of the city and has become an enduring symbol of French culture and architectural prowess.";
+    var p1t3 = "The Pyramid of Giza, located in Egypt, is a marvel of ancient engineering and a testament to the ingenuity of the Egyptian civilization. Standing as one of the Seven Wonders of the Ancient World, this architectural masterpiece has fascinated people for centuries.";
+    var p2t1 = "Santorini, Greece: Known for its stunning sunsets and whitewashed buildings, Santorini is a picturesque island in the Aegean Sea. Explore the charming villages, relax on the black sand beaches, and indulge in delicious Greek cuisine.";
+    var p2t2 = "Bora Bora, French Polynesia: Bora Bora is a tropical paradise with crystal-clear turquoise waters, lush greenery, and overwater bungalows. It offers incredible snorkeling and diving opportunities, as well as a tranquil and luxurious escape from the world.";
+    var p2t3 = "Machu Picchu, Peru: Machu Picchu is an ancient Incan citadel located high in the Andes Mountains. It is a UNESCO World Heritage site and offers breathtaking views of the surrounding mountains and valleys.";
+    var p3t1 = "Kyoto, Japan: Immerse yourself in the rich history and culture of Kyoto. Visit ancient temples, stroll through traditional gardens, and witness the beauty of cherry blossoms in spring. Don't miss iconic attractions like Kinkaku-ji (Golden Pavilion) and Fushimi Inari Taisha.";
+    var p3t2 = "Bora Bora, French Polynesia: Experience paradise in Bora Bora, a tropical island surrounded by crystal-clear turquoise waters. Relax in overwater bungalows, snorkel in vibrant coral reefs, and soak up the island's natural beauty and serenity.";
+    var p3t3 = "Petra, Jordan: Explore the ancient city of Petra, a UNESCO World Heritage site and one of the New Seven Wonders of the World. Marvel at the intricate rock-carved architecture, including the iconic Treasury building, and delve into the rich history and culture of this archaeological wonder.";
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementById("p2");
+    var p3 = document.getElementById("p3");
+    var textArray = [p1t1, p1t2, p1t3];
+    var textArray2 = [p2t1, p2t2, p2t3];
+    var textArray3 = [p3t1, p3t2, p3t3];
+    var currentIndex = 0;
+    var currentIndex2 = 0;
+    var currentIndex3 = 0;
+  
+    function textChange() {
+      p1.innerHTML = textArray[currentIndex];
+      currentIndex++;
+      if (currentIndex >= textArray.length) {
+        currentIndex = 0;
+      }
+  
+      p2.innerHTML = textArray2[currentIndex2];
+      currentIndex2++;
+      if (currentIndex2 >= textArray2.length) {
+        currentIndex2 = 0;
+      }
+  
+      p3.innerHTML = textArray3[currentIndex3];
+      currentIndex3++;
+      if (currentIndex3 >= textArray3.length) {
+        currentIndex3 = 0;
+      }
+    }
+    setInterval(textChange, 4000);
+  </script>
+</html>

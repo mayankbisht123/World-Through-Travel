@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Locations</title>
+</head>
+<style>
+  @font-face {
+  font-family: travels;
+  src: url('source_sans_pro.ttf');
+}
+
+@font-face {
+  font-family: travels_2;
+  src: url('GOTHICB.TTF');
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Background image */
+    body {
+        background-image: url('lake_bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding-bottom: 0px;
+    }
+   
+    .symbol{
+        margin-top: 53px;
+    width: 180px;
+    text-align: center;
+    margin-left: 276px;
+    }
+    .symbol img {
+    width: 60px;
+    height: 60px;
+
+     }
+
+     .symbol p{
+        margin-top: 0px;
+    font-size: 20px;
+    font-family: travels_2,sans-serif;
+    color: white;
+     }
+    /* CSS styles for the navigation bar */
+    .nav {
+        margin-top: -63px;
+    margin-left: 639px;
+    width: 580px;
+    font-family: travels;
+    font-size: 20px;
+    }
+
+    .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 10px;
+  position: relative; /* Added */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.932);
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav ul li a:hover {
+  transform: scale(1.5);
+  color: rgba(255, 255, 255, 0.514);
+  transition: all 0.5s ease;
+}
+
+.nav ul li ul.dropdown{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px 0;
+  min-width: 160px;
+  transition: all 0.5s ease;
+}
+.nav ul li:hover ul.dropdown {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+/* CSS for content */
+
+.main{
+    margin-top:10%;
+    color: black;
+
+}
+.main h1{
+    font-family:travels_2;
+    color: rgb(37, 105, 127);
+}
+.main p{
+    font-family:travels;
+}
+.rajasthan{
+    margin-left:40px;
+    display:flex;
+}
+
+.rajasthan1{
+    width: 40%;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius:20px;
+}
+.rajasthan2{
+    margin-top: 85px;
+}
+
+.uttarakhand{
+    margin-left:40px;
+    display:flex;
+}
+
+.uttarakhand2{
+    width:40%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius:20px;
+    margin-left: 6%;
+}
+.uttarakhand1{
+    margin-top: 85px;
+    margin-right:20px;
+    
+}
+
+.assam{
+    margin-left:40px;
+    display:flex;
+}
+
+.assam1{
+    width:40%;
+    margin-right:20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius:20px;
+}
+.assam2{
+    margin-top: 85px;
+}
+
+.tamil{
+    margin-left:40px;
+    display:flex;
+}
+
+.tamil1{
+    width:40%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 6%;
+    border-radius:20px;
+}
+.tamil2{
+    margin-top: 85px;
+    margin-right:20px;
+    
+}
+img{
+    transition: transform 0.3s ease;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+img:hover{
+    transform: scale(1.1);
+}
+</style>
+<body>
+    <div class="symbol">
+        <img src="icon.png" alt="">
+        <p>WORLD THROUGH <br>TRAVEL</p>
+    </div>
+    <header>
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a href="#">Destinations</a>
+                    <ul class="dropdown">
+                        <li><a href="rajasthan.html">Rajasthan</a></li>
+                        <li><a href="uttarakhand.html">Uttarakhand</a></li>
+                        <li><a href="assam.html">Assam</a></li>
+                        <li><a href="tamil_nadu.html">Tamil Nadu</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Maps</a>
+                    <ul class="dropdown">
+                      <li><a href="maps.html">Locations</a></li>
+                      <li><a href="world_clock.html">World Clock</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <h1 style="text-align: center;color:white;"><b>Maps</b></h1>
+        <div class="rajasthan">
+            <div class="rajasthan1">
+            <h1>Jaipur</h1>
+            <p><strong>Longitude:</strong> 75.7873° E</p>
+            <p><strong>Latitude:</strong> 26.9124° N</p>
+            <p>
+                Jaipur is the capital and largest city of the Indian state of Rajasthan. It is also known as the "Pink City" due to the distinct color of its buildings in the old part of the city. Jaipur is a popular tourist destination known for its rich history, magnificent palaces, vibrant culture, and beautiful architecture. The city is home to several historic landmarks, including the Hawa Mahal, Amer Fort, City Palace, and Jantar Mantar. Jaipur is also famous for its traditional arts and crafts, such as block printing, pottery, and jewelry. Visitors can explore the bustling markets, sample delicious Rajasthani cuisine, and experience the warm hospitality of the locals.
+            </p>
+            </div>
+            <div class="rajasthan2">
+            <a href="https://goo.gl/maps/aSaiAszAZ1V9Wz7j7"><img src="Jaipur.png" alt="Jaipur"  width="560px" height="230px"></a>
+            </div>
+        </div>
+        <div class="uttarakhand">
+            <div class="uttarakhand1">
+            <a href="https://goo.gl/maps/Ks5mFdDcji89nDeK9"><img src="Dehradun.png" alt="Dehradun" width="600px" height="250px"></a>
+            </div>
+            <div class="uttarakhand2">
+            <h1>Dehradun</h1>
+            <p><strong>Longitude:</strong> 78.0322° E</p>
+            <p><strong>Latitude:</strong> 30.3165° N</p>
+            <p>
+                Dehradun is the capital city of the Indian state of Uttarakhand. It is situated in the Doon Valley, nestled between the Himalayan foothills to the north and the Shivalik range to the south. Dehradun is known for its pleasant climate, picturesque landscapes, and educational institutions. The city is home to prestigious schools, colleges, and research institutes, making it an important educational hub. Dehradun is surrounded by lush green forests, making it a popular destination for nature lovers and adventure enthusiasts. The nearby hill stations of Mussoorie, Dhanaulti, and Chakrata offer breathtaking views and opportunities for trekking, camping, and other outdoor activities. Dehradun is also famous for its Basmati rice, known as "Dehradun Basmati," and its historic landmarks, such as Robber's Cave and Forest Research Institute. 
+            </p>
+            </div>
+        </div>
+        <div class="assam">
+            <div class="assam1">
+            <h1>Dispur</h1>
+            <p><strong>Longitude:</strong> 91.8076° E</p>
+            <p><strong>Latitude:</strong> 26.1408° N</p>
+            <p>
+                Dispur is the capital city of the Indian state of Assam. It is located in the western part of Guwahati, the largest city in Assam. Dispur is known for its administrative importance as it houses the seat of the Government of Assam. The city is well-planned with wide roads, government buildings, and residential areas. Dispur offers a blend of modern amenities and cultural heritage. It is surrounded by lush greenery and beautiful landscapes. The city is known for its vibrant festivals, such as Bihu, which showcases the rich cultural traditions of Assam. Dispur is also a gateway to explore the natural beauty of Assam, including Kaziranga National Park, Manas National Park, and the scenic hill station of Shillong located nearby.  
+            </p>
+            </div>
+            <div class="assam2">
+            <a href="https://goo.gl/maps/MJV7WvzHxwAExtZz9"><img src="Dispur.png" alt="Dispur" width="600px" height="250px"></a>
+            </div>
+        </div>
+        <div class="tamil">
+            <div class="tamil2">
+                <a href="https://goo.gl/maps/9gk9HbqQu5nfuU1a9"><img src="Chennai.png" alt="Chennai" width="600px" height="250px"></a>
+            </div>  
+            <div class="tamil1">
+            <h1>Chennai</h1>
+            <p><strong>Longitude:</strong> 80.2785° E</p>
+            <p><strong>Latitude:</strong> 13.0827° N</p>
+            <p>
+                Chennai, formerly known as Madras, is the capital city of the Indian state of Tamil Nadu. It is located on the Coromandel Coast of the Bay of Bengal. Chennai is a major cultural, economic, and educational center in South India. The city is known for its rich history, ancient temples, classical music, and dance forms. Chennai is also a hub for the Tamil film industry, popularly known as Kollywood. The Marina Beach, one of the longest urban beaches in the world, is a prominent attraction in Chennai. The city boasts architectural marvels like the Kapaleeshwarar Temple, Fort St. George, and the Government Museum. Chennai is famous for its spicy and flavorful South Indian cuisine, especially the delicious dosas and filter coffee. 
+            </p>
+            </div>
+               
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_css.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="source_sans_pro.ttf">
+    <link rel="stylesheet" href="GOTHICB.TTF">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Save My Trip</title>
+</head>
+<body>
+    <div id="background">
+  <div class="taskbar">
+    <div class="design">
+      <img src="icon.png" alt="">
+      <h1 style="margin-top:0px;font-size:20px;font-family:travels_2,sans-serif;">WORLD THROUGH<br>TRAVEL </h1>
+    </div>
+    <div class="menu">
+        <ul>
+           <li><a href="home.html">Home</a></li>
+           <li>
+              <a href="#">Destinations</a>
+              <ul class="dropdown">
+                 <li><a href="rajasthan.html">Rajasthan</a></li>
+                 <li><a href="uttarakhand.html">Uttarakhand</a></li>
+                 <li><a href="assam.html">Assam</a></li>
+                 <li><a href="tamil_nadu.html">Tamil Nadu</a></li>
+              </ul>
+           </li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="aboutus.html">About</a></li>
+           <li><a href="#">Maps</a>
+            <ul class="dropdown">
+              <li><a href="maps.html">Locations</a></li>
+              <li><a href="world_clock.html">World Clock</a></li>
+            </ul></li>
+          </ul>
+        </ul>
+     </div>
+</div>
+</div>
+<div class="form_sec">
+    <h2>Save My Trip (Booking Form)</h2>
+    <form action="submit.php" method="POST" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" value="<?php echo $defaultDestination; ?>" placeholder="Enter your destination" required><br><br>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" value="<?php echo $defaultState; ?>" placeholder="Enter your state"required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"placeholder="Enter your age" required><br><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required><br><br>
+        <label for="budget">Budget:</label>
+        <input type="text" id="budget" name="budget"placeholder="Enter your budget (rupees) Note:No Commas" required><br><br>
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration" placeholder="Enter the duration (days)" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+</div>
+</body>
+<script>
+    var destinationInput = document.getElementById('destination');
+var stateInput = document.getElementById('state');
+var urlParams = new URLSearchParams(window.location.search);
+var id = urlParams.get('id');
+if (id === '1') {
+  destinationInput.value = 'Jaipur';
+  stateInput.value = 'Rajasthan';
+} else if (id === '2') {
+  destinationInput.value = 'Barmer';
+  stateInput.value = 'Rajasthan';
+} else if (id === '3') {
+  destinationInput.value = 'Pokhran';
+  stateInput.value = 'Rajasthan';
+}
+else if ( id === '4') { 
+    destinationInput.value = 'Longewala';
+    stateInput.value = 'Rajasthan';
+}
+else if (id === '5') {
+    destinationInput.value = 'Kedarnath';
+    stateInput.value = 'Uttarakhand';
+  } else if (id === '6') {
+    destinationInput.value = 'Badrinath';
+    stateInput.value = 'Uttarakhand';
+  }
+  else if ( id === '7') { 
+      destinationInput.value = 'Jim Corbett';
+      stateInput.value = 'Uttarakhand';
+  }
+  else if (id === '8') {
+    destinationInput.value = 'Gangotri';
+    stateInput.value = 'Uttarakhand';
+  } else if (id === '9') {
+    destinationInput.value = 'Kamakhya Temple';
+    stateInput.value = 'Assam';
+  }
+  else if ( id === '10') { 
+      destinationInput.value = 'Majuli Island';
+      stateInput.value = 'Assam';
+  }
+  else if (id === '11') {
+    destinationInput.value = 'Tea Plantation';
+    stateInput.value = 'Assam';
+  } else if (id === '12') {
+    destinationInput.value = 'Karbi Anglong';
+    stateInput.value = 'Assam';
+  }
+  else if ( id === '13') { 
+      destinationInput.value = 'Rameshwaram';
+      stateInput.value = 'Tamil nadu';
+  }
+  else if (id === '14') {
+    destinationInput.value = 'Meenakshi Amman Temple';
+    stateInput.value = 'Tamil nadu';
+  } else if (id === '15') {
+    destinationInput.value = 'Adiyogi';
+    stateInput.value = 'Tamil nadu';
+  }
+  else if ( id === '16') { 
+      destinationInput.value = 'Ooty Hill Station';
+      stateInput.value = 'Tamil nadu';
+  }
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of Database</title>
+</head>
+<body>
+    <fieldset>
+        <legend>The Menu</legend>
+            <div>
+                <form method="post" action="create.php">
+                    <input type="submit" id="create" name="submit" value="Create Table">
+                </form>
+            </div>
+            <div>
+                <a href="form.html">
+                    <button>Add Data</button>
+                  </a>                  
+            </div>
+            <div>
+                <form method="post" action="view_data.php">
+                    <input type="submit" id="view_data" name="view_data" value="View Data">
+                </form>
+            </div>
+            <div>
+                <form method="post" action="delete.php">
+                    <input type="submit" id="delete_data" name="delete_data" value="Delete Data">
+                </form>
+            </div>
+    </fieldset>
+</body>
+</html>

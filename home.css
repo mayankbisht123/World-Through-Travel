@@ -1,0 +1,232 @@
+@font-face {
+  font-family: travels;
+  src: url('source_sans_pro.ttf');
+}
+@font-face {
+  font-family: travels_2;
+  src: url('GOTHICB.TTF');
+}
+body {
+  font-family: travels,sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("north_lights.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  z-index: 1;
+}
+.taskbar {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 80%;
+  margin-left: 20%;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.top_bar {
+  background-color:white;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.top_bar h1 {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin: 0 auto; /* Center the heading horizontally */
+  font-family: travels_2, sans-serif;
+}
+.top_bar img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.top_bar img:hover {
+  transform: scale(1.1);
+}
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10vh;
+}
+.design img {
+  width: 60px;
+  height: 60px;
+}
+.menu {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto; /* Center the menu horizontally */
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  background-color: transparent;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 10px;
+  position: relative; /* Added */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.menu ul li a:hover {
+  transform: scale(1.5);
+  color: rgba(255, 255, 255, 0.252);
+  transition: all 0.5s ease;
+}
+
+.menu ul li ul.dropdown{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px 0;
+  min-width: 160px;
+  transition: all 0.5s ease;
+}
+.menu ul li:hover ul.dropdown {
+  display: block;
+  transition: all 0.5s ease;
+}
+.top_content {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+}
+
+.top_content a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.top_content a:hover {
+  background-color:#3b87a0;
+  color:white;
+}
+.lake {
+  color: white;
+  font-size: 15px;
+  font-family: travels, sans-serif;
+  margin-top: 0%;
+  padding: 0;
+  background-image: url("lake_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.lake p {
+  margin-top:5%;
+  font-family: travels_2, sans-serif;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.content {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: travels_2, sans-serif;
+}
+
+.first_div,
+.second_div,
+.third_div {
+  background-color: white;
+  width: 250px;
+  height: 300px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+.first_div h5,
+.second_div h5,
+.third_div h5 {
+  margin-top: 15px;
+  color: #3f91ad;
+  font-size: 20px;
+  font-family: travels_2, sans-serif;
+}
+
+.first_div p,
+.second_div p,
+.third_div p {
+  font-size: 14px;
+  color:black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2px; 
+  font-family: travels_2, sans-serif;
+
+
+}
+.first_div a,
+.second_div a,
+.third_div a {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 8px 30px;
+  color: #37819a;
+  font-weight: 100px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; 
+  font-family: travels_2, sans-serif;
+
+}
+
+.first_div a:hover,
+.second_div a:hover,
+.third_div a:hover {
+  background-color:#3b87a0;
+  color:white;
+}
+
+
+
+
+
+
+

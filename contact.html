@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Contact Us</title>
+</head>
+<style>
+
+@font-face {
+  font-family: travels;
+  src: url('source_sans_pro.ttf');
+}
+
+@font-face {
+  font-family: travels_2;
+  src: url('GOTHICB.TTF');
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('sample.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-bottom: 0px;
+    }
+
+ .symbol{
+        margin-top: 53px;
+    width: 180px;
+    text-align: center;
+    margin-left: 276px;
+    }
+    .symbol img {
+    width: 60px;
+    height: 60px;
+
+     }
+
+     .symbol p{
+        margin-top: 0px;
+    font-size: 20px;
+    font-family: travels_2,sans-serif;
+    color: white;
+     }
+
+    header img {
+        width: 150px;
+    height: 150px;
+    margin-left: 265px;
+    margin-top: 50px;
+     }
+    /* CSS styles for the navigation bar */
+    .nav {
+        margin-top: -63px;
+    margin-left: 639px;
+    width: 580px;
+    font-family: travels,sans-serif;
+    font-size: 20px;
+    }
+
+    .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 10px;
+  position: relative; /* Added */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.932);
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav ul li a:hover {
+  transform: scale(1.5);
+  color: rgba(255, 255, 255, 0.514);
+  transition: all 0.5s ease;
+}
+
+.nav ul li ul.dropdown{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px 0;
+  min-width: 160px;
+  transition: all 0.5s ease;
+}
+.nav ul li:hover ul.dropdown {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+    /*CSS for content*/
+    .main {
+        background-color: rgb(255, 255, 255);
+    min-height: calc(100vh - 170px);
+    margin-top: 446px;
+    padding: 10px;
+   
+    }
+    .main h1{
+        font-family:travels_2,sans-serif;
+    }
+    .main p{
+        font-family:travels,sans-serif;
+    }
+    .contact {
+        
+        margin-left: 156px;
+        padding-left: 20px;
+        width: 182px;
+        height: 50px;
+        background-color: #3f91ad;
+        color: #ffffff;
+        border-radius: 20px;
+    }
+
+    .bigblock {
+        margin-left: 156px;
+        margin-top:20px;
+        padding: 20px;
+        background-color: #3f91ad;
+        border-radius: 20px;
+
+        
+    }
+
+    .para{
+        margin-left: 1%;
+        color:white;
+        font-size:40px;
+        font-family: travels_2,sans-serif;
+    }
+    
+    .subblock{
+        display: flex;
+    margin-top: 70px;
+    font-family: 'travels',sans-serif;
+        
+    }
+    .details{
+        margin-right:150px;
+        margin-top:70px;
+        color:white;
+        font-family: travels,sans-serif;
+    }
+    .details ul{
+        font-family: travels,sans-serif;
+        font-size: 20px;
+    }
+    .image{
+        margin-top:20px;
+        margin-left:190px;
+    }
+        footer {
+            color: white;
+            background-color: #00bdfc;
+    margin-top: 5%;
+    padding-left:0%;
+    height: 100px;
+    margin-bottom: 10%;
+    }
+
+    footer ul li {
+        float: left;
+        flex-direction: row;
+        list-style-type: none;
+       margin-left: 15%;
+       margin-top: 15%;
+    }
+
+    footer ul li:last-child {
+        margin: 0;
+    }
+    .form_sec {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 0%;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        margin-bottom: 10%;
+      }
+      
+      .form_sec h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #25697f;
+        font-size: 35px;
+      }
+      
+      .form_sec form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      .form_sec form input[type="text"],
+      .form_sec form input[type="number"],
+      .form_sec form input[type="tel"],
+      .form_sec form input[type="email"],
+      .form_sec form input[type="textarea"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: black;
+        border-radius: 3px;
+        border: 2px solid #25697f;
+        background-color: #e6f1f5;
+      }
+      .form_sec form input[type="textarea"]{
+        height: 100px;
+      }
+      .form_sec form input[type="submit"] {
+        width: 95%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        margin-bottom: 10%;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      
+      .form_sec form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+</style>
+<body>
+</head>
+<body>
+    <div class="symbol">
+        <img src="icon.png" alt="">
+        <p>WORLD THROUGH <br>TRAVEL</p>
+    </div>
+<header>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Destinations</a>
+                <ul class="dropdown">
+                    <li><a href="rajasthan.html">Rajasthan</a></li>
+                    <li><a href="uttarakhand.html">Uttarakhand</a></li>
+                    <li><a href="assam.html">Assam</a></li>
+                    <li><a href="tamil_nadu.html">Tamil Nadu</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="aboutus.html">About</a></li>
+            <li><a href="#">Maps</a>
+                <ul class="dropdown">
+                  <li><a href="maps.html">Locations</a></li>
+                  <li><a href="world_clock.html">World Clock</a></li>
+                </ul></li>
+        </ul>
+    </div>
+</header>
+    <div class="main">
+        <div class="contact">
+            <h1><b>Contact</b></h1>
+        </div>
+        <div class="bigblock">
+            <div class="para">
+                <p>Here you can enter your queries </p>
+            </div>
+            <div class="subblock">
+                <div class="details">
+                    <ul>
+                        <li>Graphic era,<br>Dehradun</li>
+                        <li>travelthroughworld123@gmail.com</li>
+                        <li>91**********</li>
+                    </ul>
+                    <ul>
+                        <li>Call us now to book<br>
+                            91********
+                        </li>
+                        <li>Follow us</li>
+                        <li>Powered by Mayank and kartik</li>
+                    </ul>
+                </div>
+                <div class="form_sec">
+                    <h2>The Contact Form</h2>
+                    <form action="contact.php" method="post">
+                        <label for="name">Name</label>
+                        <input class="input" type="text" name="name" placeholder="Full Name"><br>
+                        <label for="name">Email</label>
+                        <input class="input" type="email" name="email" placeholder="Email"><br>
+                        <label for="name">Subject</label>
+                        <input class="input" type="text" name="subject" placeholder="Subject"><br>
+                        <label for="name">Feedback</label>
+                        <input class="input" id="t1" type="textarea" name="message"><br>
+                        <input class="input" id="t2" type="submit" value="Submit" name="sub">
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="map.png" alt="Location" width="700px" hight="500px">
+            </div>
+        </div>          
+    </div>
+</body>
+</html>
